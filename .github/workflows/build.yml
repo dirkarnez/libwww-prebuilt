@@ -53,10 +53,9 @@ jobs:
           curl ${{ matrix.compiler.url }} -L --output compiler &&^
           7z.exe x compiler
           
-      - working-directory: ${{ env.libraryName }}
-        shell: msys2 {0}
+      - shell: msys2 {0}
         run: |
-          ../local-build.sh 
+          ./local-build.sh ${{ env.libraryName }}
           
       # - shell: cmd
       #   run: |
