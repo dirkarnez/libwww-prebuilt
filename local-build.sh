@@ -7,6 +7,6 @@ cd $1 && \
 autoreconf -ivf && \
 sed -i "s/RM='\$RM'/RM='\$RM -f'/" ./configure && \
 ./configure --help && \
-./configure --with-expat=no --enable-static --prefix="$workspace/installation" && \
+./configure --enable-cyrillic --with-expat=no --enable-static --prefix="$workspace/installation" && \
 make && \
 make install
