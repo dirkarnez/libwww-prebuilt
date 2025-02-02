@@ -6,5 +6,5 @@ g++ --version && \
 cd $1 && \
 autoreconf -ivf && \
 ./configure --help && \
-./configure --enable-static --prefix="$workspace/installation" && \
+./configure --with-expat=no --enable-static --prefix="$workspace/installation" && \
 make install
