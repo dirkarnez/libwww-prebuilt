@@ -7,4 +7,5 @@ cd $1 && \
 autoreconf -ivf && \
 ./configure --help && \
 ./configure --with-expat=no --enable-static --prefix="$workspace/installation" && \
+make && \
 make install
