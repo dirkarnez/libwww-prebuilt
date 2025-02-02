@@ -31,7 +31,8 @@ jobs:
       cmakeInstallationPath: libwww-installation
       tagName: 5.4.2
     steps:
-    
+      - uses: actions/checkout@v4
+      
       - uses: actions/checkout@v4
         with:
           repository: w3c/libwww
